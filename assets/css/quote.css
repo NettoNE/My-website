@@ -1,0 +1,70 @@
+nav, main {
+    margin: 1.7rem 5% 0;
+}
+
+main article {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    margin-bottom: 2rem;
+}
+
+/* nav */
+
+nav {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.nav-bar {
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    font-size: 1.3rem;
+    margin: 0 1rem;
+}
+
+.nav-link {
+    color: #E0E0E0;
+}
+
+/* quote-box */
+
+.quote-box {
+    min-width: 300px;
+    padding: 30px;
+    border: 2px #3A3A3A solid;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.quote-box h1 {
+    font-size: 2rem;
+    color: #E0E0E0;
+}
+
+.quote-box p {
+    line-height: 2.2;
+    margin: 10px 0;
+    font-size: clamp(1.1rem, 4vw, 1.3rem);
+    color: #CECECE;
+}
+
+/* random quotes */
+
+.quotes {
+    display: none;
+}
+
+.enable-quote {
+    display: block;
+}

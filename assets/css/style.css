@@ -1,0 +1,162 @@
+/* main style sheet */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+nav, main, div.mobile-menu {
+    margin: 1.7rem 5% 0;
+}
+
+main {
+    margin-bottom: 2rem;
+}
+
+/* header */
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo h1 {
+    font-size: 1.9rem;
+    color: #E0E0E0;
+    padding: 10px;
+    border-radius: 5px; 
+}
+
+/* nav */
+
+nav {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.nav-bar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    font-size: 1.3rem;
+    margin: 0 1rem;
+}
+
+.nav-link {
+    color: #E0E0E0;
+}
+
+/* disable mobile-menu-icon on desktop */
+.mobile-menu-icon {
+    display: none;
+}
+
+/* disable mobile-menu on desktop */
+.mobile-menu {
+    display: none;
+}
+
+/* main */
+
+main article {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+/* about-me */
+
+.about-me {
+    flex: 1;
+    border: 2px #3A3A3A solid;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 30px;
+    min-width: 300px;
+}
+
+.about-me h1 {
+    font-size: 2rem;
+    color: #E0E0E0;
+}
+
+.about-me p {
+    line-height: 2;
+    margin: 10px 0;
+    font-size: 1.3em;
+    color: #CECECE;
+}
+
+.about-me-img {
+    display: flex;
+    justify-content: center;
+}
+
+.about-me-img img {
+    width: 300px; 
+}
+
+/* personal-statement */
+
+.personal-statement{
+    flex: 1;
+    min-width: 300px;
+    padding: 30px;
+    border: 2px #3A3A3A solid;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.personal-statement h1 {
+    font-size: 2rem;
+    color: #E0E0E0;
+}
+
+.personal-statement p {
+    line-height: 2;
+    margin: 10px 0;
+    font-size: 1.3em;
+    color: #CECECE;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    /* disable desktop nav-items */
+    .nav-item {
+        display: none;
+    }
+
+    /* mobile */
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 2px #3a3a3a solid;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+        margin-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open {
+        display: block;
+    }
+}
